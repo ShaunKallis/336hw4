@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  
+}
+
+h1 {
+    color:yellow;
+    background-color:black;
+    margin-left: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+nava {
+    padding: 20px;
+    color:green;
+    box-shadow: 5px 5px 10px #999;
+}
+
+.link {
+    background-color:yellow;
+}
+
+#content{
+    color:red;
+    margin:0 auto;
+    
+}
+
+
+td{
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+td strong{
+    color: orange;
+}
+ul{
+    width:600px;
+    margin: 0 auto;
+    text-align: left;
+}
+main{
+    width: 90%;
+    justify-content:center;
+    display:flex;
+    background-color:red;
+    border: solid 5px green;
+    background: linear-gradient(red, yellow);
+}
+
+footer{
+    font-size: 0.8em;
+    color: purple;
+}

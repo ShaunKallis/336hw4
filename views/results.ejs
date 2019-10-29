@@ -1,0 +1,22 @@
+
+<% include partials/header.ejs %>
+
+  <body>
+    
+    <h1> Pixabay Search Results </h1>
+    
+    <form action="/results"> <!-- used to send info to server, everytime used the page is refreshed -->
+      
+      Keyword: <input type="text" name="keyword">
+      <button> Search! </button>
+      
+    </form> <br>
+  
+    <img src='<%= images.hits[0].largeImageURL %>' width='250'>
+    <img src='<%= images.hits[1].largeImageURL %>' width='250'>
+    <img src='<%= images.hits[2].largeImageURL %>' width='250'>
+    <img src='<%= images.hits[3].largeImageURL %>' width='250'>
+    
+  </body>
+  
+</html>
