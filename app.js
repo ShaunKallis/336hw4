@@ -6,14 +6,17 @@
 
 const express = require("express");
 const app = express();
-app.engine('html', require('ejs').renderFile);
+// app.engine('html', require('ejs').renderFile);
+app.set("view engine", "ejs");
 app.use(express.static("public")); // to access img, css, js
 
 //app.get("/welcome", function(req, res){ //to open in preview type /welcome at end of address
 
 app.get("/", function(req, res){
     //res.send("<h1>hello!</h1>");
-    res.render("index.ejs");
+    res.render("index", {
+        robby: "ROBOTS WILL REPLACE US ALL!!!"
+    });
 });
 
 app.get("/mercury", function(req, res){ //to open in preview type /bye at end of address
